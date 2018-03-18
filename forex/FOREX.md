@@ -42,9 +42,9 @@ This module will have 2 functionalities
    exchangeRate.getExchangeRate('CurrencyFrom','CurrencyTo','Date');
    exchangeRate.getExchangeRate('SGD','INR','2018-03-17'); //returns 49.39
    ```
-   Since the system is fetching the data directly from redis and there is no network head we can speak the performance impact    negligible.
+   Since the system is fetching the data directly from redis and there is no network overhead so the performance impact          negligible.
    The Module is connected to a Redis ELB hence the system is fault tolerant even in the case of a redis node failure the        system will not go down.
    
-   Reason I decided to create this engine as a installable library and not expose it as a service(REST,Apache Thrift etc..)      is to make the performance impact as low as possible. Since we are not dealing with the network overhead we can be sure      the installing the service will not impact the performance of any existing engine.
+   Reason I decided to create this engine as a installable library and not expose it as a service(REST,Apache Thrift etc..)      is to make the performance impact as low as possible and there is no buisness logic in this service what so ever in          essence this is a exchange rate fetch call from a database so I decided to keep it that way. Since we are not dealing with    the network overhead we can be sure the installing the service will not impact the performance of any existing engine.
    
    To make the service generic we will expose a set configuration files where the service which is integrating this service      can provide its infrastructure details.   
