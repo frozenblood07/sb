@@ -1,0 +1,14 @@
+{
+  "name": "sb-exercise",
+  "version": "1.0.0",
+  "description": "SB Programing Exercise",
+  "main": "shopback-calculator.js",
+  "scripts": {
+    "test": "node_modules/jest/bin/jest.js"
+  },
+  "author": "Karan Tuteja",
+  "devDependencies": {
+    "jest": "^20.0.4",
+    "child-process-promise": "^2.2.1"
+  }
+}
