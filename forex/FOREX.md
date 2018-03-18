@@ -34,7 +34,7 @@ This module will have 2 functionalities
   ```
   This will be a service which will run everyday at 12:00 AM and the keys will have an ttl of 6 Months by default. All the     transactions which occur during any day will use the exchange rate generated during that day. This satisfies fresh rate       updated criteria.
   
-  There will be a backup service which runs every 30 secs after 12:00 AM and checks if the cron ran properly if not then will   run the cron again and after 2 unsuccessfull attempts will generate an P1 Priority alert.
+  There will be a backup service which runs every 30 secs after 12:00 AM and checks if the rate service ran properly if not     then will run the service again and after 2 unsuccessfull attempts will generate an P1 Priority alert.
   
   
  - Get the 'nth date' 'currency x to currency y' exchange rate. The module will expose functions from getting the exchange      rate
