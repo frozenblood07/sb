@@ -1,6 +1,6 @@
-#Forex
+# Forex
 
-##Problem
+## Problem
 In ShopBack, we deal with commissions and cashbacks in a mix of currencies on a daily basis. The following scenario is a common occurrence.
 
 ShopBack Customer pays merchant for products in currency X
@@ -12,4 +12,4 @@ Due to the highly volatile nature of exchange rates and how it now makes a signi
 An existing engine that tracks and update all customer transactions within the past 6 months will be using this.
 
 
-##Solution
+## Solution
