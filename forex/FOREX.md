@@ -16,6 +16,8 @@ An existing engine that tracks and update all customer transactions within the p
 
 I will create the **ExchangeRate** module and install it in the customer transaction engine or any other service for that matter as a third party library.
 
+### Assumptions 
+The external rate exchange api will provide the exchange rate based on the date and time provided in the api. Meaning it will return the results for the date and time we want. This is to ensure that every service works on the same exchange rate. 
 
 
 ### ExchangeRate module
